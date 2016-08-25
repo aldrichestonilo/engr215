@@ -1,0 +1,20 @@
+% Generate a random
+
+% real number in the range (0, 20)
+a = 20 * rand  % Not sure if this is acceptable, or if there is a
+               % cleaner way to do it
+               
+% real number in the range (20, 50)
+b = 20 + 50 * rand (1, 1)  % Again, not sure if there is a cleaner way 
+                           % but it works
+                           
+% integer in the inclusive range from 1 to 10
+c = randi ([1 10], 1, 1) 
+
+
+% integer in the inclusive range from 0 to 10
+d = randi ([0 10], 1, 1)
+
+
+% integer in the inclusve range from 50 to 100
+e = randi ([50 100], 1, 1)
