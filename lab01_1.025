@@ -1,0 +1,14 @@
+% fix(3.5) vs floor(3.5)
+% No difference
+
+% fix(3.4) vs floor (-3.4)
+% fix(3.4) returns 3 and floor(-3.4) returns -4
+
+% fix(3.2) vs floor(3.2)
+% No difference
+
+% fix(-3.2) vs floor (-3.2)
+% fix(-3.2) returns -3 and floor(-3.2) returns -4
+
+% fix(-3.2) vs ceil(-3.2)
+% fix(-3.2) returns -4 and ceil(-3.2) returns -3
