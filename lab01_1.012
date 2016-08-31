@@ -1,5 +1,9 @@
-% Generate a random
+% Aldrich Estonilo
+% ENGR 215
+% 08-24-2016
+% Lab 01
 
+% Generate a random
 % real number in the range (0, 20)
 a = 20 * rand  % Not sure if this is acceptable, or if there is a
                % cleaner way to do it
