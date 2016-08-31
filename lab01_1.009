@@ -1,3 +1,8 @@
-ftemp = 123
+% Aldrich Estonilo
+% ENGR 215
+% 08-24-2016
+% Lab 01
+
+ftemp = 123;
 
 ctemp = (ftemp - 32) * (5 / 9)
