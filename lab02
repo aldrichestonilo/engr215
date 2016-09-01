@@ -1,0 +1,65 @@
+% Aldrich Estonilo
+% ENGR 215
+% 08-31-2016
+% Lab 02
+
+% Problem 1, Exercise 2.5 
+% Using the colon operator, create the following row vectors
+
+2 : 7
+
+1.1 : .2 : 1.7
+
+8 : -2 : 2
+
+% Problem 2, Exercise 2.7
+% Write an expression using linspace that will result in the
+% same as 2: 0.2: 3
+
+linspace ( 2, 3, 6)
+
+% Problem 3, Exercise 2.17
+% Genrate a 2 x 3 matrix of random
+
+% real numbers, each in the range (0, 1)
+
+rand ( 2, 3)
+
+% real numbers, each in the range (0, 10)
+
+rand (2, 3) * 10     % this is the same function as above, except multiplying
+                     % the results by 10 to have a range of 0 - 10
+
+
+% integers, each in the inclusive range from 5 to 20
+
+randi ([5,15], 2, 3)
+
+% Problem 4, Exercise 2.38
+% Given the two matrices, A and B, Perform the following operations
+
+A = [1 2 3; 4 -1 6];
+
+B = [2 4 1; 1 3 0];  
+ 
+% A + B
+A + B
+
+% A - B
+A - B
+
+% A * B 
+% A * B     % This will return an error because to multiply two
+            % matrices, the amount of columns of the first must
+            % match the amount of rows of the second, and these
+            % two do not match
+          
+
+% Problem 5, Exercise 2.40
+
+v = [33.0000 10.5000 40.0000 18.0000 20.0000 7.5000];
+
+hours = [v(1) v(3) v(5)] 
+payrate = [v(2) v(4) v(6)]
+
+totalpay = hours .* payrate
