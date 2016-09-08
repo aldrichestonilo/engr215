@@ -28,7 +28,11 @@ C = sum(A./B)
 
 % Problem 4, Exercise 35
 
-i = randi ([-10,10],[1,5]);
+i = randi ([-10,10],1,5)
 
-j = i - 3;
+j = i - 3
+
+amountpositive = sum (j > 0)
+
+cummin (j)
 
