@@ -34,7 +34,7 @@ numerator = [(3:2:9)]
 
 denominator = [1:4]
 
-fraction = sum(numerator./denominator)
+sum_fraction = sum(numerator./denominator)
 
 % Problem 4, Exercise 35
 
@@ -67,9 +67,14 @@ A = cummax (mat3x5);
 
 % Problem 6, Exercise 45
 
-disp ('Problem 5, Exercise 2.45')
+disp ('Problem 6, Exercise 2.45')
 
 randvec = randi([50,100],1,20)
 
-evens = 
+findeven = find(rem (randvec,2)==0);
 
+even = randvec(findeven)
+
+findodd = find(rem(randvec,2)==1);
+
+odd = randvec(findodd)
