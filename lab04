@@ -1,1 +1,19 @@
+% Aldrich Estonilo
+% ENGR 215
+% 09 - 14 - 2016
+% Lab 4
+
+clc
+% Problem 1 - Exercise 3.14
+disp ('Problem 1 - Exercise 3.14')
+
+x = input('Please enter an x-variable: ');
+y = input('Please enter a y-variable: ');
+plot (x,y,'g+')
+
+% Problem 2 - Exercise 3.15
+
+disp ('Problem 2 - Exercise 3.15')
+
+
 
