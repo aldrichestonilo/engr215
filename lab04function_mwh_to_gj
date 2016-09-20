@@ -1,0 +1,12 @@
+% Aldrich Estonilo
+% ENGR 215
+% 09 - 14 - 2016
+% Lab 4
+
+function mwh_to_gj = mwh_to_gj(mwh)
+% mwh_to_gj calculates the gilajoules equivalent
+% to a given amount of megawatt hours
+% Format of call: mwh_to_gj(megawatt hours)
+% Returns the amount of gigajoules
+
+mwh_to_gj = mwh * 3.6
