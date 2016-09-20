@@ -53,4 +53,14 @@ randfile
 disp ('Problem 4 - Exercise 3.24')
 
 megawatthours = input('Please enter an amount of MWH: ')
-mwh_to_gj (megawatthours)
+gigajoules = mwh_to_gj (megawatthours);
+
+% Problem 5 - Exercise 3.34
+
+disp ('Problem 5 - Exercise 3.34')
+
+disp('Please enter all temperatures in Kelvin')
+tempcold = input ('Please enter the absolute temperature of the cold reservoir: ');
+temphot = input ('Please enter the absolute temperature of the hot reservoir: ');
+
+fprintf('Your carnot efficiency would be %.3f\n', carnot(tempcold/temphot));
