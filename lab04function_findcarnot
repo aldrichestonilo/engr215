@@ -1,0 +1,14 @@
+% Aldrich Estonilo
+% ENGR 215
+% 09 - 14 - 2016
+% Lab 4
+
+function carnot = carnot (coldoverhot)
+% carnot calculates the carnot efficiency of a heat engine operating
+% between two reservoirs given the absolute temperatures of each reservoir
+% Format of call: carnot(temperature of cold / temperature of hot)
+% The variable inside the function is the ratio of temperatures, cold over
+% hot
+% Returns: Carnot efficiency value
+
+carnot = 1 - coldoverhot
