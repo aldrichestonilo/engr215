@@ -20,14 +20,37 @@ plot (xvar,yvar,'g+')
 figure (2)
 disp ('Problem 2 - Exercise 3.15')
 
-x = linspace (0, pi, 10);
-y = sin (x);
+x10 = linspace (0, pi, 10);
+sinx10 = sin (x10);
 
-plot (x,y,'g*')
+plot (x10,sinx10,'g*')
 
 figure (3)
 
-x =  linspace (0, pi, 100);
-y = sin (x);
+x100 =  linspace (0, pi, 100);
+sinx100 = sin (x100);
 
-plot (x,y,'g*')
+plot (x100,sinx100,'g*')
+
+% Problem 3 - Exercise 3.20
+
+disp ('Problem 3 - Exercise 3.20')
+
+random3by6 = randi([50 100],3,6);
+
+save randfile.dat random3by6 -ascii
+
+random2by6 = randi([50 100],2,6);
+
+save randfile.dat random2by6 -ascii -append
+
+load randfile.dat;
+
+randfile
+
+% Problem 4 - Exercise 3.24
+
+disp ('Problem 4 - Exercise 3.24')
+
+megawatthours = input('Please enter an amount of MWH: ')
+mwh_to_gj (megawatthours)
