@@ -1,0 +1,15 @@
+% Aldrich Estonilo
+% 
+
+n = 5
+
+for i = 1:n
+    for k = i+1:n
+        fprintf (' ')
+    end
+    for j = 1:i
+        fprintf('*')
+    end
+    fprintf('\n')
+end
+
