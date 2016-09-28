@@ -1,0 +1,13 @@
+lines = input ('Please enter an odd amount of lines to be printed for the rhombus: ');
+if rem(lines,2) <= 0
+    error ('Error: You entered an even number.')
+end
+for i = [1:2:lines lines-2:-2:1]
+    for j = i:2:lines
+        fprintf (' ')
+    end
+    for k = 1:i
+        fprintf ('*')
+    end
+    fprintf ('\n')
+end 
