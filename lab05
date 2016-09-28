@@ -1,7 +1,15 @@
 % Aldrich Estonilo
-% 
+% ENGR 215
+% 09 - 28 - 2016
+% Lab 5
 
-n = 5
+format short
+format compact
+clc
+
+% Problem 1 - Print a right triangle using for loops
+disp ('Problem 1')
+n = input ('Please enter an amount of lines to be printed for a right triangle: ');
 
 for i = 1:n
     for k = i+1:n
@@ -12,4 +20,26 @@ for i = 1:n
     end
     fprintf('\n')
 end
+
+fprintf ('\n') % Just to make it look nicer
+
+% Problem 2 - Print a rhombus with n lines
+
+disp ('Problem 2') 
+
+lines = input ('Please enter an ODD amount of lines to be printed for the rhombus: ');
+
+if rem (lines,2) <= 0
+    error ('Error: You entered an even number!')
+end
+
+for i = [1:2:lines lines-2:-2:1]
+    for j = i:2:lines
+        fprintf (' ')
+    end
+    for k = 1:i
+        fprintf ('*')
+    end
+    fprintf ('\n')
+end 
 
